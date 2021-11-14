@@ -1,0 +1,103 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/air-datepicker@2.2.3/dist/css/datepicker.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/air-datepicker@2.2.3/dist/js/datepicker.min.js"></script>
+  </head>
+
+<div id="page-wrapper">
+  <header id="header">
+  <h1 id="title1" class="text-center">Депозитный калькулятор</h1>
+  <p id="title2" class="text-center">Калькулятор депозитов позволяет рассчитать ваши доходы после внесения суммы на счёт в банке по определённому тарифу.</h>
+  </header>
+ <section id="form-container" class="form-section">
+   <div class="form-grid">
+    <div class="form-group">
+    <label id="label" for="name">Дата открытия</label>
+    <input
+      type="text" 
+      name="1"
+      id="datepicker"
+      class="form-control"
+      class="datepicker-here" 
+      data-position="right top"
+      placeholder="Дата открытия"
+      readonly="readonly"
+      checked
+           >
+  </div>
+  <div class="form-group">
+    <div class="time">
+    <label id="time-label" for="name">Срок вклада</label>
+    <input
+      type="text" 
+      name="deposit-time"
+      id="deposit-time"
+      class="form-control"
+      placeholder="Срок вклада"
+           >
+<select
+      type="text" 
+      name="month"
+      id="month"
+      class="form-control"
+      placeholder="Срок вклада"
+           >
+        <option value="месяц">месяц</option>
+        <option value="год">год</option>
+           </select>
+       </div>
+  </div>
+    <div class="form-group">
+    <label id="label" for="name">Сумма вклада</label>
+    <input
+      type="text" 
+      name="3"
+      id="3"
+      class="form-control"
+      placeholder="Сумма вклада"
+           >
+  </div>
+      <div class="form-group">
+    <label id="label" for="name">Процентная ставка, % годовых</label>
+    <input
+        type=""
+        name="procent"
+        id="number"
+      class="form-control"
+      placeholder="10,00"
+           >
+  </div>
+      <div class="form-group">
+      <label id="label-5"
+        ><input
+          name="prefer"
+          type="checkbox"
+          class="input-checkbox"
+        />Ежемесячное пополнение вклада</label
+           >
+  </div>
+      <div class="form-group">
+    <label id="label" for="name">Сумма пополнения вклада</label>
+    <input
+      type="text" 
+      name="name"
+      id="name"
+      class="form-control"
+      placeholder="Сумма пополнения вклада"
+      required
+           >
+  </div>
+        <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        Рассчитать
+      </button>
+   </div>
+   </section>
+  </div>
